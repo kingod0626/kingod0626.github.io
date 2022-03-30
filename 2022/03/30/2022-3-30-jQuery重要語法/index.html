@@ -24,7 +24,7 @@
 <meta property="og:description" content="紀錄jQuery常見語法 jQuery介紹jQuery基本格式 12345$(document).ready(function() &amp;#123;  $(&quot;要互動的元素&quot;).click(function(event) &amp;#123;  &quot;要藉由此元素觸發的事件&quot;  &amp;#125;);&amp;#125;); 取消預設效果1$().preventDefault(); 套用至">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-03-29T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-03-30T09:01:39.351Z">
+<meta property="article:modified_time" content="2022-03-30T09:21:49.807Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="學習">
 <meta property="article:tag" content="前端文章">
@@ -198,7 +198,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      528 字
+      733 字
     </span>
   
 
@@ -207,7 +207,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      5 分钟
+      7 分钟
     </span>
   
 
@@ -250,8 +250,10 @@
 
 <h3 id="找子元素內容"><a href="#找子元素內容" class="headerlink" title="找子元素內容"></a>找子元素內容</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$().find();<br></code></pre></td></tr></table></figure>
 
-<h3 id="雜項"><a href="#雜項" class="headerlink" title="雜項"></a>雜項</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash">$().on(); //持續監聽物件,事件<br>$().click(); //點擊事件<br>$().delay(<span class="hljs-string">&quot;時間&quot;</span>); //延遲效果 <br>$().slidetoggle(); //(Up/Down)自動選擇展開/收起<br>$().stop(); //中斷效果<br>$().attr(<span class="hljs-string">&#x27;要增加的標籤&#x27;</span>,<span class="hljs-string">&#x27;增加的內容&#x27;</span>); //動態增加HTML標籤屬性<br>$().remove(); //刪除內容<br></code></pre></td></tr></table></figure>
-
+<h3 id="雜項"><a href="#雜項" class="headerlink" title="雜項"></a>雜項</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs bash">$().on(); //持續監聽物件,事件<br>$().click(); //點擊事件<br>$().delay(<span class="hljs-string">&quot;時間&quot;</span>); //延遲效果 <br>$().slidetoggle(); //(Up/Down)自動選擇展開/收起<br>$().stop(); //中斷效果<br>$().attr(<span class="hljs-string">&#x27;要增加的標籤&#x27;</span>,<span class="hljs-string">&#x27;增加的內容&#x27;</span>); //動態增加HTML標籤屬性<br>$().toggleclass(); //自動判斷新增或移除class<br>$().remove(); //刪除內容<br></code></pre></td></tr></table></figure>
+<p>Q：關於 .css() 跟.attr() 還有 toggleClasss() 的用法，使用時機？</p>
+<p>A：css() 主要是可以直接調整 CSS 樣式，不需要新增 class ；而 .attr() 則是要修改 href 、 src 、 title 等等的屬性值時，就需要使用 .attr()</p>
+<p>toggleClasss() 則是會用在控制一個 class 新增或移除，去調整原本元素的 CSS 樣式</p>
 <p>其他可參考jQuery辭典: (<a target="_blank" rel="noopener" href="https://oscarotero.com/jquery/">https://oscarotero.com/jquery/</a>)</p>
 
             </div>
