@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>【學習日誌】javascript基礎介紹</title>
+    <link href="/2022/04/01/2022-4-1-javascript%E5%9F%BA%E7%A4%8E/"/>
+    <url>/2022/04/01/2022-4-1-javascript%E5%9F%BA%E7%A4%8E/</url>
+    
+    <content type="html"><![CDATA[<h2 id="javascript宣告變數的三種方法"><a href="#javascript宣告變數的三種方法" class="headerlink" title="javascript宣告變數的三種方法"></a>javascript宣告變數的三種方法</h2><figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">var //現較少用到 不常使用 <br><br><span class="hljs-built_in">let</span> //可於後續程式改變其值<br><br>const //不可於後續程式改變其值<br><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>學習</tag>
+      
+      <tag>前端文章</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>【學習日誌】jQuery重要語法</title>
     <link href="/2022/03/30/2022-3-30-jQuery%E9%87%8D%E8%A6%81%E8%AA%9E%E6%B3%95/"/>
     <url>/2022/03/30/2022-3-30-jQuery%E9%87%8D%E8%A6%81%E8%AA%9E%E6%B3%95/</url>
