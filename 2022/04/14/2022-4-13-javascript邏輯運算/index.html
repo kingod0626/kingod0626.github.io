@@ -16,22 +16,22 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="javascript宣告變數的三種方法123456var &#x2F;&#x2F;現較少用到 不常使用 let &#x2F;&#x2F;可於後續程式改變其值const &#x2F;&#x2F;不可於後續程式改變其值 javascript內容字串穿插不同型別的2種方法12345let myName &#x3D;&quot;Tom&quot;;let myAge &#x3D; 18;let content &#x3D; &quot;您好我是&quot;+myName+&quot;，我今年&amp;">
+    <meta name="description" content="&amp;&amp; 和 || 是寫出簡潔程式碼很好用的東西，最近學到頭有點痛，用這篇文章記錄整理一下&amp;&amp;和||的邏輯和用法。 true 和 false 概念False就是你傳入Boolean()會回傳false的值 123456console.log(Boolean(false)) &#x2F;&#x2F; falseconsole.log(Boolean(0)) &#x2F;&#x2F; falseconsole.l">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【學習日誌】javascript基礎介紹">
-<meta property="og:url" content="http://example.com/2022/04/01/2022-4-1-javascript%E5%9F%BA%E7%A4%8E/index.html">
+<meta property="og:title" content="2022-4-13-javascript邏輯運算子 &amp;&amp; 和 ||">
+<meta property="og:url" content="http://example.com/2022/04/14/2022-4-13-javascript%E9%82%8F%E8%BC%AF%E9%81%8B%E7%AE%97/index.html">
 <meta property="og:site_name" content="Hi I m Johnny">
-<meta property="og:description" content="javascript宣告變數的三種方法123456var &#x2F;&#x2F;現較少用到 不常使用 let &#x2F;&#x2F;可於後續程式改變其值const &#x2F;&#x2F;不可於後續程式改變其值 javascript內容字串穿插不同型別的2種方法12345let myName &#x3D;&quot;Tom&quot;;let myAge &#x3D; 18;let content &#x3D; &quot;您好我是&quot;+myName+&quot;，我今年&amp;">
+<meta property="og:description" content="&amp;&amp; 和 || 是寫出簡潔程式碼很好用的東西，最近學到頭有點痛，用這篇文章記錄整理一下&amp;&amp;和||的邏輯和用法。 true 和 false 概念False就是你傳入Boolean()會回傳false的值 123456console.log(Boolean(false)) &#x2F;&#x2F; falseconsole.log(Boolean(0)) &#x2F;&#x2F; falseconsole.l">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-03-31T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-04-14T08:27:55.559Z">
+<meta property="article:published_time" content="2022-04-14T05:36:12.000Z">
+<meta property="article:modified_time" content="2022-04-14T09:55:35.043Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="學習">
 <meta property="article:tag" content="前端文章">
 <meta name="twitter:card" content="summary_large_image">
   
   
-  <title>【學習日誌】javascript基礎介紹 - Hi I m Johnny</title>
+  <title>2022-4-13-javascript邏輯運算子 &amp;&amp; 和 || - Hi I m Johnny</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -177,7 +177,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="【學習日誌】javascript基礎介紹">
+            <span class="h2" id="subtitle" title="2022-4-13-javascript邏輯運算子 &amp;&amp; 和 ||">
               
             </span>
 
@@ -187,8 +187,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-04-01 00:00" pubdate>
-        April 1, 2022 am
+      <time datetime="2022-04-14 13:36" pubdate>
+        April 14, 2022 pm
       </time>
     </span>
   
@@ -198,7 +198,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      2.1k 字
+      1.5k 字
     </span>
   
 
@@ -207,7 +207,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      18 分钟
+      13 分钟
     </span>
   
 
@@ -236,20 +236,29 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">【學習日誌】javascript基礎介紹</h1>
+            <h1 style="display: none">2022-4-13-javascript邏輯運算子 &amp;&amp; 和 ||</h1>
             
             <div class="markdown-body">
-              <h2 id="javascript宣告變數的三種方法"><a href="#javascript宣告變數的三種方法" class="headerlink" title="javascript宣告變數的三種方法"></a>javascript宣告變數的三種方法</h2><figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">var //現較少用到 不常使用 <br><br><span class="hljs-built_in">let</span> //可於後續程式改變其值<br><br>const //不可於後續程式改變其值<br><br></code></pre></td></tr></table></figure>
-<h2 id="javascript內容字串穿插不同型別的2種方法"><a href="#javascript內容字串穿插不同型別的2種方法" class="headerlink" title="javascript內容字串穿插不同型別的2種方法"></a>javascript內容字串穿插不同型別的2種方法</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">let</span> myName =<span class="hljs-string">&quot;Tom&quot;</span>;<br><span class="hljs-built_in">let</span> myAge = 18;<br><span class="hljs-built_in">let</span> content = <span class="hljs-string">&quot;您好我是&quot;</span>+myName+<span class="hljs-string">&quot;，我今年&quot;</span>+myAge+<span class="hljs-string">&quot;歲&quot;</span> //原版用法<br><span class="hljs-built_in">let</span> content = `您好我是<span class="hljs-variable">$&#123;myName&#125;</span>，我今年<span class="hljs-variable">$&#123;myAge&#125;</span>歲` //ES6新增的用法<br><br></code></pre></td></tr></table></figure>
-<h2 id="一些特殊用法"><a href="#一些特殊用法" class="headerlink" title="一些特殊用法"></a>一些特殊用法</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs bash">myEmail=myEmail.trim() //除去空白字元<br>length=myEmail.length //計算字元長度<br>typeof name //查資料型別<br><span class="hljs-keyword">function</span> work(x)&#123;<br>    <span class="hljs-built_in">return</span> something x;<br>&#125; //函示陳述式 會於程式一開始拉出來執行<br>const work = <span class="hljs-keyword">function</span>(x)&#123;<br>    <span class="hljs-built_in">return</span> x*x;<br>&#125;or<br>const work = (x) =&gt;&#123;<br>    <span class="hljs-built_in">return</span> x*x;<br>&#125;or<br>const work = x =&gt; <span class="hljs-built_in">return</span> x*x //函式表達式 箭頭函式若只有一參數可省略() 不會於程式一開始拉出來執行<br></code></pre></td></tr></table></figure>
+              <p>&amp;&amp; 和 || 是寫出簡潔程式碼很好用的東西，最近學到頭有點痛，用這篇文章記錄整理一下&amp;&amp;和||的邏輯和用法。</p>
+<h2 id="true-和-false-概念"><a href="#true-和-false-概念" class="headerlink" title="true 和 false 概念"></a>true 和 false 概念</h2><p>False就是你傳入Boolean()會回傳false的值</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">console.log(Boolean(<span class="hljs-literal">false</span>)) // <span class="hljs-literal">false</span><br>console.log(Boolean(0)) // <span class="hljs-literal">false</span><br>console.log(Boolean(‘’)) // <span class="hljs-literal">false</span><br>console.log(Boolean(null)) // <span class="hljs-literal">false</span><br>console.log(Boolean(undefined)) // <span class="hljs-literal">false</span><br>console.log(Boolean(NaN)) // <span class="hljs-literal">false</span><br></code></pre></td></tr></table></figure>
 
-<h2 id="陣列操作"><a href="#陣列操作" class="headerlink" title="陣列操作"></a>陣列操作</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">let</span> math =[1,<span class="hljs-string">&quot;two&quot;</span>,3]<br><br><br>math[x] //x填入的數字代表陣列中第幾項，陣列由第[0]項開始算<br>math.length //陣列長度<br>math[3]=<span class="hljs-string">&quot;four&quot;</span> //寫入第4筆資料為<span class="hljs-string">&quot;four&quot;</span>，中間項目若沒填則自動填入空資料<br>math.push(<span class="hljs-string">&quot;four&quot;</span>) //在陣列後方塞入第4筆資料<span class="hljs-string">&quot;four&quot;</span><br>math.unshift(<span class="hljs-string">&quot;zero&quot;</span>) //在陣列前方塞入新的第1筆資料<span class="hljs-string">&quot;zero&quot;</span><br>math.pop(<span class="hljs-string">&quot;four&quot;</span>) //在陣列刪除最後一筆資料<span class="hljs-string">&quot;four&quot;</span><br>math.shift(<span class="hljs-string">&quot;zero&quot;</span>) //在陣列刪除第1筆資料<span class="hljs-string">&quot;zero&quot;</span><br>math.splice(2,3) //在陣列[2]的位置刪除往後數3筆資料<br>math.forEach(<span class="hljs-keyword">function</span>(item,index,array) &#123;<br>    <br>&#125;); //陣列資料個別處理 item:資料,index:位於陣列中第幾筆,array:列出陣列<br>math.filter(<span class="hljs-keyword">function</span>(item,index,array) &#123;<br>    <br>&#125;); //陣列資料個別處理 item:資料,index:位於陣列中第幾筆,array:列出陣列 filter/find:篩選多筆/第一筆<br><br></code></pre></td></tr></table></figure>
+<p>True則是會回傳true，所有不是false的都是true：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">console.log(Boolean(<span class="hljs-literal">true</span>)) // <span class="hljs-literal">true</span><br>console.log(Boolean(1)) // <span class="hljs-literal">true</span><br>console.log(Boolean(<span class="hljs-string">&#x27;Hello&#x27;</span>)) // <span class="hljs-literal">true</span><br>console.log(Boolean([1,2,3])) // <span class="hljs-literal">true</span><br>console.log(Boolean(&#123;name:<span class="hljs-string">&#x27;Johnny&#x27;</span>&#125;)) // <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
 
-<h2 id="物件導向"><a href="#物件導向" class="headerlink" title="物件導向"></a>物件導向</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs bash"><br><span class="hljs-built_in">let</span> mom =<span class="hljs-string">&quot;Kiara&quot;</span> <br><span class="hljs-built_in">let</span> dad = <span class="hljs-string">&quot;Calliope&quot;</span><br><span class="hljs-built_in">let</span> childs = 3;<br><br><span class="hljs-built_in">let</span> home=&#123;<br>    mom,<br>    dad,<br>    childs<br>&#125;  //宣告物件所包含的元素<br><br>console.log(home)<br>console.log(home.childs) or  home[<span class="hljs-string">&#x27;childs&#x27;</span>] //找物件裡的屬性<br>home.friends =<span class="hljs-string">&quot;Ame&quot;</span> or home[<span class="hljs-string">&#x27;friends&#x27;</span>] =<span class="hljs-string">&quot;Ame&quot;</span> // 在home物件新增一個屬性friends並賦予一個值<span class="hljs-string">&quot;Ame&quot;</span><br><br></code></pre></td></tr></table></figure>
+<p>假設我今天要寫一個檢查元素的if…else判斷，通常最直觀的想法會這樣寫:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash">const arr = []<br>console.log(arr.length) <br><span class="hljs-keyword">if</span> (arr.length&gt;0) &#123;<br>console.log(<span class="hljs-string">&#x27;陣列裡有東西&#x27;</span>)<br>&#125; <span class="hljs-keyword">else</span> &#123;<br>console.log(<span class="hljs-string">&#x27;空的陣列&#x27;</span>)<br>&#125; // 空的陣列<br></code></pre></td></tr></table></figure>
+<p>如果利用到true&#x2F;false的概念 可以在第三行if條件中改寫成</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-keyword">if</span> (arr.length)<br></code></pre></td></tr></table></figure>
 
-<h2 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">const el = document.querySelector(<span class="hljs-string">&#x27;h1&#x27;</span>); //使用<span class="hljs-string">&#x27;CSS 選擇器&#x27;</span>選取網頁上的元素 h1<br>el.textContent = <span class="hljs-string">&quot;Hello World!!&quot;</span> //覆蓋一個text上去h1<br>main.innerHTML = `&lt;h1 class=<span class="hljs-string">&quot;header&quot;</span>&gt;標題&lt;/h1&gt;`; //在main class裡刪掉資料並貼上&lt;h1 class=<span class="hljs-string">&quot;header&quot;</span>&gt;標題&lt;/h1&gt;<br>Link.setAttribute(<span class="hljs-string">&quot;class&quot;</span>,<span class="hljs-string">&quot;red&quot;</span>); //在Link裡增加一個class為red<br>Link.getAttribute(<span class="hljs-string">&quot;class&quot;</span>); //在Link裡找一個class的值<br></code></pre></td></tr></table></figure>
+<p>更進一步縮短還能改寫為</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">const arr = []<br>const message = arr.length ? <span class="hljs-string">&#x27;陣列裡有東西&#x27;</span> : <span class="hljs-string">&#x27;空的陣列&#x27;</span><br>console.log(message)<br></code></pre></td></tr></table></figure>
 
-<h2 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">btn.addEventListener(<span class="hljs-string">&quot;click&quot;</span>,<span class="hljs-keyword">function</span>(e)&#123;<br>    console.log(<span class="hljs-string">&#x27;典籍了&#x27;</span>);<br>&#125;) <br></code></pre></td></tr></table></figure>
+<h2 id="amp-amp-如何運作"><a href="#amp-amp-如何運作" class="headerlink" title="&amp;&amp; 如何運作"></a>&amp;&amp; 如何運作</h2><p>從左邊到右邊，回傳第一個是falsy的值，若全部皆為truthy，則回傳最後一個值。簡單舉例：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">const number = 10 &amp;&amp; 50 &amp;&amp; 0 &amp;&amp; 3<br>console.log(number) // 因為0為從左到右第一個<span class="hljs-literal">false</span>值 所以number為0<br><br>const numberTwo = 10 &amp;&amp; 50 &amp;&amp; 100 &amp;&amp; 3<br>console.log(numberTwo) // 因為3為從左到右最後一個<span class="hljs-literal">true</span>值 所以numberTwo為3<br></code></pre></td></tr></table></figure>
+
+<h2 id="如何運作"><a href="#如何運作" class="headerlink" title="|| 如何運作"></a>|| 如何運作</h2><p>基本上就是跟&amp;&amp;相反：從左邊到右邊，回傳第一個是truthy的值，若全部皆為falsy，則回傳最後一個值。簡單舉例：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash">const number = 1 || 2 || 3 <br>console.log(number) //number 因為第一個就是truthy了，直接回傳1<br>const numberTwo = 0 || 15 <br>console.log(numberTwo) //numberTwo第一個數字是0(falsy)，第二個數字15(truthy)，回傳1<br>const numberThree = 0 || undefined || null<br>console.log(numberThree) // numberThree全部都是falsy，回傳最後一個值null<br></code></pre></td></tr></table></figure>
             </div>
             <hr>
             <div>
@@ -278,18 +287,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="../../14/2022-4-13-javascript%E9%82%8F%E8%BC%AF%E9%81%8B%E7%AE%97/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">2022-4-13-javascript邏輯運算子 && 和 ||</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="../../../03/30/2022-3-30-jQuery%E9%87%8D%E8%A6%81%E8%AA%9E%E6%B3%95/">
-                        <span class="hidden-mobile">【學習日誌】jQuery重要語法</span>
+                      <a href="../../01/2022-4-1-javascript%E5%9F%BA%E7%A4%8E/">
+                        <span class="hidden-mobile">【學習日誌】javascript基礎介紹</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
