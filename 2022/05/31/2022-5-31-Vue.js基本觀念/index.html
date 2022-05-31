@@ -25,7 +25,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/2022/05/31/2022-5-31-Vue.js%E5%9F%BA%E6%9C%AC%E8%A7%80%E5%BF%B5/ogKK8jt.png">
 <meta property="article:published_time" content="2022-05-30T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-05-31T10:16:00.559Z">
+<meta property="article:modified_time" content="2022-05-31T10:17:29.305Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="學習">
 <meta property="article:tag" content="前端文章">
@@ -241,7 +241,7 @@
             <h1 style="display: none">【學習日誌】Vue.js基本觀念</h1>
             
             <div class="markdown-body">
-              <h2 id="為何要使用到Vue來寫網頁"><a href="#為何要使用到Vue來寫網頁" class="headerlink" title="為何要使用到Vue來寫網頁"></a>為何要使用到Vue來寫網頁</h2><p>Vue使用到了關注點分離的概念，資料歸資料，畫面規畫面<br>畫面渲染方面交由Vue本身去處理，方便程式的撰寫及可讀性</p>
+              <h1 id="為何要使用到Vue來寫網頁"><a href="#為何要使用到Vue來寫網頁" class="headerlink" title="為何要使用到Vue來寫網頁"></a>為何要使用到Vue來寫網頁</h1><p>Vue使用到了關注點分離的概念，資料歸資料，畫面規畫面<br>畫面渲染方面交由Vue本身去處理，方便程式的撰寫及可讀性</p>
 <h2 id="常見的格式"><a href="#常見的格式" class="headerlink" title="常見的格式"></a>常見的格式</h2><figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">&lt;script src=<span class="hljs-string">&quot;https://unpkg.com/vue@next&quot;</span>&gt;&lt;/script&gt;<br><br>&lt;!-- 這裡是 html --&gt;<br>&lt;div <span class="hljs-built_in">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;<br>    &#123;&#123; text &#125;&#125;<br>&lt;/div&gt;<br></code></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs bash">// 這裡是 Vue<br>Vue.createApp(&#123;<br>// data 用到的資料<br>data: <span class="hljs-function"><span class="hljs-title">function</span></span>() &#123;<br>    // 一定是用 <span class="hljs-built_in">return</span><br>    <span class="hljs-built_in">return</span> &#123;<br>    text: <span class="hljs-string">&#x27;hi im 小明&#x27;</span>,<br>    name: <span class="hljs-string">&#x27;小明&#x27;</span>,<br>    num: 0<br>    &#125;<br>&#125;,<br>// methods 資料處理的方法<br>methods: &#123;<br><br>&#125;,<br>// mounted 生命週期<br>mounted: <span class="hljs-function"><span class="hljs-title">function</span></span>() &#123;<br><br>&#125;,<br>&#125;).mount(<span class="hljs-string">&#x27;#app&#x27;</span>);<br><br><br></code></pre></td></tr></table></figure>
 
