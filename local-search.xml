@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>【學習日誌】Python爬蟲介紹</title>
+    <link href="/2023/10/22/2023-10-21-%E5%B8%B8%E8%A6%8B%E7%9A%84python%E7%88%AC%E8%9F%B2%E5%9F%BA%E7%A4%8E/"/>
+    <url>/2023/10/22/2023-10-21-%E5%B8%B8%E8%A6%8B%E7%9A%84python%E7%88%AC%E8%9F%B2%E5%9F%BA%E7%A4%8E/</url>
+    
+    <content type="html"><![CDATA[<h1 id="網路爬蟲"><a href="#網路爬蟲" class="headerlink" title="網路爬蟲"></a>網路爬蟲</h1><p>網路爬蟲（Web crawler）是一種自動化程式，可以在網際網路上自動地搜尋、分類及收集網頁內容的程式。網路爬蟲也稱為網路蜘蛛（Web spider）或網路機器人（Web robot）<br>目前我學到的有兩種方法使用爬蟲，分別為使用Requests發送HTTP請求，下載網頁的HTML內容，並使用BeautifulSoup套件過濾標籤，從標籤內容取得目標資料的爬蟲<br>另一種為使用Selenium套件，做到模仿使用者使用網路的自動化操作<br>以下會針對這兩種作介紹</p><h2 id="Requests和BeautifulSoup版本"><a href="#Requests和BeautifulSoup版本" class="headerlink" title="Requests和BeautifulSoup版本"></a>Requests和BeautifulSoup版本</h2><p>在html的標籤上，使用Requests發送HTTP請求，下載網頁的HTML內容，利用BeautifulSoup套件過濾下載的資料標籤取得對應資料，<br>這種方法較為快速，程式撰寫的可讀性高，且能使用的地方更廣，能爬到的資源相對更多<br>缺點是特定網站為防止爬蟲會設置身分確認，需額外想辦法繞過或破解</p><h2 id="Selenium版本"><a href="#Selenium版本" class="headerlink" title="Selenium版本"></a>Selenium版本</h2><p>此套件可以在程式上，利用webDriver自動化操作，直接模擬一般用戶使用網頁，<br>優點為所看即所得，只要正常使用下，網路上看的到的資源都可用此方法操作獲取，<br>缺點則因為是模擬一般用戶使用，在處理資料上會占用較大的電腦運算資源，<br>且程式撰寫方向為模擬一般用戶使用網頁，可讀性低，撰寫上較繁瑣</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>前端</tag>
+      
+      <tag>後端</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>【學習日誌】Vue.js基本觀念</title>
     <link href="/2022/05/31/2022-5-31-Vue.js%E5%9F%BA%E6%9C%AC%E8%A7%80%E5%BF%B5/"/>
     <url>/2022/05/31/2022-5-31-Vue.js%E5%9F%BA%E6%9C%AC%E8%A7%80%E5%BF%B5/</url>
